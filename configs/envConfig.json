@@ -1,0 +1,23 @@
+{
+  "Details" : {
+    "Name": "Klassi Automated Testing Tool",
+    "Created by": "Larry Goddard"
+  },
+
+  "bsProjectName": "Klassi Automated Test",
+  "reportName": "Demo Automated Report",
+  "projectReportName": "Demo Test Suite",
+
+  "dev": {
+    "envName": "DEVELOPMENT",
+    "base_url": "https://duckduckgo.com/"
+  },
+  "test": {
+    "envName": "TEST",
+    "base_url": "https://duckduckgo.com/"
+  },
+  "uat": {
+    "envName": "UAT",
+    "base_url": ""
+  }
+}

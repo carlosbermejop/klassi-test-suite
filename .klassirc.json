@@ -1,0 +1,34 @@
+{
+    "Details" : {
+        "Name": "Klassi Automated Testing Tool",
+        "Created by": "Larry Goddard"
+    },
+    "LOCAL_IDENTIFIER": "QaAutoTest",
+    "USERNAME": "larryg2",
+    "ACCESS_KEY": "JhxyJ1qdNhAx75KuwpQc",
+    "CROSSBROWSER_URL": "@api.browserstack.com/automate",
+
+    "bsProjectName": "Klassi Automated Test",
+    "reportName": "Demo Automated Report",
+    "projectReportName": "Demo Test Suite",
+
+    "emailData": {
+        "emailList": "QA Auto Test <qaautotest@oup.com>",
+        "accessibilityReport": "Yes"
+    },
+
+    "dev": {
+        "envName": "DEVELOPMENT",
+        "base_url": "https://duckduckgo.com/"
+    },
+
+    "test": {
+        "envName": "TEST",
+        "base_url": "https://duckduckgo.com/"
+    },
+
+    "uat": {
+        "envName": "UAT",
+        "base_url": ""
+    }
+}

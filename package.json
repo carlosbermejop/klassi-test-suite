@@ -1,0 +1,14 @@
+{
+  "name": "klassi-test-suite",
+  "version": "1.0.0",
+  "main": "index.js",
+  "license": "MIT",
+  "scripts": {
+    "dev": "node ./node_modules/klassi-demo-js/index.js -u --tags @search",
+    "bslocal": "node ./node_modules/klassi-demo-js/index.js -d --tags @search -w browserstack -x"
+  },
+
+  "dependencies": {
+    "klassi-demo-js": "https://github.com/larryg01/klassi-demo-js.git"
+  }
+}
