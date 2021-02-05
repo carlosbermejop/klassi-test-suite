@@ -1,10 +1,6 @@
-const {envConfigs} = require('../../configs/envConfig.json');
 
 Given(/^The user arrives on the duckduckgo search page$/, async () => {
-  // await confSettings.loadPage(process.env.BASE_URL, 10);
-  // console.log('this is the name ', envConfig.base_url);
-  // console.log('this is the name ', `process.env${BASE_URL}`);
-  await confSettings.loadPage(base_url, 10);
+  await confSettings.loadPage(env.base_url, 10);
 });
 
 When(/^they input (.*)$/, async (searchWord) => {
