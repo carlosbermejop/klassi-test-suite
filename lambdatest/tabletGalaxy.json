@@ -1,0 +1,7 @@
+{
+  "build" : "your build name",
+  "name" : "your test name",
+  "platform" : "Android",
+  "deviceName" : "Galaxy Tab S4",
+  "platformVersion" : "8.1"
+}

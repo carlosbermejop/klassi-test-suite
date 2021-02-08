@@ -1,0 +1,13 @@
+{
+  "build" : "your build name",
+  "name" : "your test name",
+  "platform" : "Windows 10",
+  "browserName" : "Internet Explorer",
+  "version" : "11.0",
+  "resolution" : "1280x1024",
+  "selenium_version" : "3.14.0",
+  "console" : true,
+  "visual" : true,
+  "ie.driver" : "2.53.1",
+  "ie.compatibility" : 10000
+}

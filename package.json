@@ -4,8 +4,9 @@
   "main": "index.js",
   "license": "MIT",
   "scripts": {
-    "dev": "node ./node_modules/klassi-demo-js/index.js -u --tags @search",
-    "bslocal": "node ./node_modules/klassi-demo-js/index.js -d --tags @search -w browserstack -x"
+    "dev": "node ./node_modules/klassi-demo-js/index.js --disableReport --tags",
+    "bslocal": "node ./node_modules/klassi-demo-js/index.js --disableReport --tags @search --remoteService browserstack --extraSettings",
+    "cibsdev": "node ./node_modules/klassi-demo-js/index.js --email --disableReport --tags @search --remoteService browserstack --extraSettings"
   },
 
   "dependencies": {
