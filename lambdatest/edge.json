@@ -1,10 +1,14 @@
 {
+  "project":"Klassi Test Suite",
+
   "platform" : "Windows 10",
   "browserName" : "MicrosoftEdge",
   "version" : "86.0",
   "resolution" : "1280x1024",
   "selenium_version" : "3.13.0",
   "console" : true,
+  "network" : true,
   "visual" : true,
+  "tunnel": true,
   "edge.driver" : "86.0"
 }

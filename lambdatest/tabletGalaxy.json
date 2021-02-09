@@ -1,7 +1,12 @@
 {
-  "build" : "your build name",
-  "name" : "your test name",
+  "project":"Klassi Test Suite",
+
   "platform" : "Android",
   "deviceName" : "Galaxy Tab S4",
-  "platformVersion" : "8.1"
+  "platformVersion" : "8.1",
+  "deviceOrientation" : "LANDSCAPE",
+  "console" : true,
+  "network" : true,
+  "visual" : true,
+  "tunnel": true
 }

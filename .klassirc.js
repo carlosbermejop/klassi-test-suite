@@ -38,7 +38,18 @@ module.exports = {
       "userName": "larryg2",
       "accessKey": "JhxyJ1qdNhAx75KuwpQc",
       "crossBrowserUrl": "@api.browserstack.com/automate",
-      "bsProjectName": "Klassi Automated Test", // must be the same as name in the bstack folder
+      "bsProjectName": "Klassi Automated Test", // must be the same as name in the browserstack folder
+    },
+
+    /**
+     *  if you are using lambdatest
+     */
+    "lttunnel": {
+      "localIdentifier": "QaAutoTest",
+      "userName": "Larry.Goddard",
+      "accessKey": "KQX4SSMlKaqhFDbHJxTR2t9a7JJB8xIzuzd0ZOCa4hWypdBHMg",
+      "crossBrowserUrl": "hub.lambdatest.com",
+      "ltProjectName": "Klassi Automated Test", // must be the same as name in the lambdatest folder
     },
 
     /**

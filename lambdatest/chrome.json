@@ -1,4 +1,6 @@
 {
+  "project":"Klassi Test Suite",
+
   "platform" : "Windows 10",
   "browserName" : "Chrome",
   "version" : "85.0",
