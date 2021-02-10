@@ -1381,7 +1381,7 @@ keyv@^4.0.0:
 
 "klassi-demo-js@https://github.com/larryg01/klassi-demo-js.git":
   version "1.0.6"
-  resolved "https://github.com/larryg01/klassi-demo-js.git#4ce84387a5bf0da65b109b05f55a2f39ffaa29f1"
+  resolved "https://github.com/larryg01/klassi-demo-js.git#9e9b0e8ce1ea00dacc77a58054ea7a3d6e44f09b"
   dependencies:
     "@lambdatest/node-tunnel" "^3.0.0"
     async "^3.2.0"

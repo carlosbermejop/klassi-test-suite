@@ -1,4 +1,4 @@
-const s3File = require('../../node_modules/klassi-demo-js/runtime/s3ReportProcessor');
+const s3File = require('klassi-demo-js/runtime/s3ReportProcessor');
 
 Then(/^Compiling and sending the resulting test report data$/, async () => {
   /** process the files in s3 bucket and sends an email with all html links */

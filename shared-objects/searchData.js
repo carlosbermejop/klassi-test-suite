@@ -1,5 +1,4 @@
 module.exports = {
-  url: 'https://duckduckgo.com/',
   elem: {
     searchInput: '[name="q"]',
     resultLink: 'div#links',

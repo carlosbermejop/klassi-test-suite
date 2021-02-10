@@ -9,7 +9,7 @@ module.exports = {
    */
   performSearch: async (searchWord) => {
     image = searchWord;
-    await confSettings.takeImage(`${image}_1-0.png`);
+    await helpers.takeImage(`${image}_1-0.png`);
     elem = await browser.$(sharedObjects.searchData.elem.searchInput);
     await elem.setValue(searchWord);
     if (browserName === 'iexplorer') {
@@ -17,7 +17,7 @@ module.exports = {
     } else {
       /** Accessibility verification */
       await accessibilityLib.getAccessibilityReport(`SearchPage-${searchWord}`);
-      await confSettings.takeImage(`${image}_1-1.png`, sharedObjects.searchData.elem.leftBadge);
+      await helpers.takeImage(`${image}_1-1.png`, sharedObjects.searchData.elem.leftBadge);
     }
 
     const title = await browser.getTitle();
@@ -34,9 +34,9 @@ module.exports = {
       /** Accessibility Total error count/violations */
       // eslint-disable-next-line no-undef
       cucumberThis.attach(`Accessibility Error Count : ${accessibilityLib.getAccessibilityTotalError()}`);
-      await confSettings.compareImage(`${image}_1-1.png`);
+      await helpers.compareImage(`${image}_1-1.png`);
     }
-    await confSettings.compareImage(`${image}_1-0.png`);
+    await helpers.compareImage(`${image}_1-0.png`);
     console.log('images have been compared');
     return image;
   },
@@ -47,7 +47,7 @@ module.exports = {
     if (browserName === 'iexplorer') {
       // do nothing
     } else {
-      await confSettings.takeImage(`${image}_1-2.png`, sharedObjects.searchData.elem.leftBadge);
+      await helpers.takeImage(`${image}_1-2.png`, sharedObjects.searchData.elem.leftBadge);
     }
     await browser.pause(DELAY_1s);
     /** verify this element has children */
@@ -56,7 +56,7 @@ module.exports = {
     if (browserName === 'iexplorer') {
       // do nothing
     } else {
-      await confSettings.compareImage(`${image}_1-2.png`);
+      await helpers.compareImage(`${image}_1-2.png`);
     }
   },
 };
