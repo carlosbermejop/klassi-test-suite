@@ -4,9 +4,10 @@
   "main": "index.js",
   "license": "MIT",
   "scripts": {
+    "start": "node ./node_modules/klassi-demo-js/index.js",
     "dev": "node ./node_modules/klassi-demo-js/index.js --disableReport --tags",
     "bslocal": "node ./node_modules/klassi-demo-js/index.js --disableReport --tags @search --remoteService browserstack --extraSettings",
-    "lttummel": "node ./node_modules/klassi-demo-js/index.js --disableReport --tags @search --remoteService lambdatest --extraSettings",
+    "lttunnel": "node ./node_modules/klassi-demo-js/index.js --disableReport --tags @search --remoteService lambdatest --extraSettings",
     "cibsdev": "node ./node_modules/klassi-demo-js/index.js --email --disableReport --tags @search --remoteService browserstack --extraSettings",
     "cibsuat": "node ./node_modules/klassi-demo-js/index.js --email --disableReport --tags @search --remoteService lambdatest --extraSettings"
   },
