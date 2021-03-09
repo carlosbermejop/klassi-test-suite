@@ -4,14 +4,14 @@
   "main": "index.js",
   "license": "MIT",
   "scripts": {
-    "start": "node ./node_modules/klassi-demo-js/index.js",
-    "dev": "node ./node_modules/klassi-demo-js/index.js --disableReport --tags",
-    "bslocal": "node ./node_modules/klassi-demo-js/index.js --disableReport --tags @search --remoteService browserstack --extraSettings",
-    "lttunnel": "node ./node_modules/klassi-demo-js/index.js --disableReport --tags @search --remoteService lambdatest --extraSettings",
-    "cibsdev": "node ./node_modules/klassi-demo-js/index.js --email --disableReport --tags @search --remoteService browserstack --extraSettings",
-    "cibsuat": "node ./node_modules/klassi-demo-js/index.js --email --disableReport --tags @search --remoteService lambdatest --extraSettings"
+    "start": "node ./node_modules/klassi-js/index.js",
+    "dev": "node ./node_modules/klassi-js/index.js --disableReport --tags",
+    "bslocal": "node ./node_modules/klassi-js/index.js --disableReport --tags @search --remoteService browserstack --extraSettings",
+    "ltlocal": "node ./node_modules/klassi-js/index.js --disableReport --tags @search --remoteService lambdatest --extraSettings",
+    "cibsdev": "node ./node_modules/klassi-js/index.js --email true --disableReport --tags @search --remoteService browserstack --extraSettings",
+    "cibsuat": "node ./node_modules/klassi-js/index.js --email true--disableReport --tags @search --remoteService lambdatest --extraSettings"
   },
   "dependencies": {
-    "klassi-demo-js": "https://github.com/larryg01/klassi-demo-js.git"
+    "klassi-js": "https://github.com/larryg01/klassi-demo-js.git"
   }
 }

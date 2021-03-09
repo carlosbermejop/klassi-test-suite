@@ -1,6 +1,5 @@
 {
-  "project":"Project Name",
-
+  "build": "Klassi Automated Test",
   "platform" : "Windows 10",
   "browserName" : "Firefox",
   "version" : "84.0",
@@ -9,6 +8,5 @@
   "console" : true,
   "network" : true,
   "visual" : true,
-  "tunnel": true,
   "firefox.driver" : "v0.27.0"
 }

@@ -24,7 +24,6 @@ module.exports = {
   "dataConfig": {
     "projectName": "Klassi Automated Test", // as its called in your Git repo except the '-_'
     "reportName": "Automated Report", // the name you want at the top of your report
-    "s3FolderName": "klassi-demo-js", // name as github name
 
     "emailData": {
       "emailList": "QaAutoTest<admin@klassitech.co.uk> ", // list of addresses your report will be emailed too
@@ -65,10 +64,9 @@ module.exports = {
      *  if you are using lambdatest
      */
     "lttunnel": {
-      "localIdentifier": "QaAutoTest",
       "userName": "Larry.Goddard",
       "accessKey": "KQX4SSMlKaqhFDbHJxTR2t9a7JJB8xIzuzd0ZOCa4hWypdBHMg",
-      "crossBrowserUrl": "hub.lambdatest.com"
+      "crossBrowserUrl": "@api.lambdatest.com/automation/api/v1"
     },
 
     /**
@@ -76,6 +74,7 @@ module.exports = {
      * Else this can be deleted
      */
     "awsConfig": {
+      "s3FolderName": "klassi-js", // name as github name
       "ID": "your aws id",
       "SECRET": "your aws secret key",
       "REGION": "your aws region",

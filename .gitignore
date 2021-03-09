@@ -9,7 +9,7 @@ node_modules
 reports
 artifacts
 /shared-objects/docs/userAgent.txt
-visual-regression-baseline
+
 # IntelliJ project files
 .idea
 out

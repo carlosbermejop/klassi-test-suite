@@ -41,7 +41,7 @@ To help with usage of the built in functionality, we have added a klassirc.js fi
     └── chrome
         ├── reportName-01-01-1900-235959.html
         └── reportName-01-01-1900-235959.json
-.klassirc.js # file contains all your environment variables #projectName, emailAddresses, environments, browserstack/lambdatest config, reportName
+.envConfigrc.js # file contains all your environment variables #projectName, emailAddresses, environments, browserstack/lambdatest config, reportName
 ```
 
 ## Step definitions
