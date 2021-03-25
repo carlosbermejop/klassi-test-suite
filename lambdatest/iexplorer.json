@@ -1,6 +1,6 @@
 {
-  "projectName": "KlassiTech",
-  "build": "Klassi Automated Test",
+  "projectName": "projectName",
+  "build": "projectName Automated Test",
   "platform" : "Windows 10",
   "browserName" : "Internet Explorer",
   "version" : "11.0",

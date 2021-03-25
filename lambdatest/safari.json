@@ -1,6 +1,6 @@
 {
-  "projectName": "KlassiTech",
-  "build": "Klassi Automated Test",
+  "projectName": "projectName",
+  "build": "projectName Automated Test",
   "platform" : "macOS Mojave",
   "browserName" : "Safari",
   "version" : "12.0",

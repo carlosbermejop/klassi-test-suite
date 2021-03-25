@@ -1,5 +1,4 @@
 module.exports = {
-
   /**
    * this is for your project environment setups
    * all relevant details for each environment i.e. username, passwords etc.
@@ -22,10 +21,11 @@ module.exports = {
   },
 
   "dataConfig": {
-    "projectName": "Klassi Automated Test", // as its called in your Git repo except the '-_'
+    "projectName": "projectName", // this is what your project will be called in LambdaTest/Browserstack
+                                  // it must also be placed in the Browser Capabilities
 
     "emailData": {
-      "emailList": "QaAutoTest<admin@klassitech.co.uk> ", // list of addresses your report will be emailed too
+      "emailList": "QA<test@test.com> ", // list of addresses your report will be emailed too
       "accessibilityReport": "Yes"
     },
 
@@ -34,9 +34,9 @@ module.exports = {
      * the delete lttunnel below and the lambdatest folder
      */
     "bslocal": {
-      "localIdentifier": "QaAutoTest",
-      "userName": "oupbrowserstacka1",
-      "accessKey": "YguUs8uVe5BispUGNvzs"
+      "localIdentifier": "",
+      "userName": "",
+      "accessKey": ""
     },
 
     /**
@@ -44,8 +44,8 @@ module.exports = {
      *  then delete bslocal above and the browserstack folder
      */
     "ltlocal": {
-      "userName": "Larry.Goddard",
-      "accessKey": "KQX4SSMlKaqhFDbHJxTR2t9a7JJB8xIzuzd0ZOCa4hWypdBHMg"
+      "userName": "",
+      "accessKey": ""
     },
 
     /**
@@ -57,8 +57,8 @@ module.exports = {
       "ID": "",
       "SECRET": "",
       "REGION": "",
-      "BUCKET_NAME": "your aws bucket name",
-      "DOMAIN_NAME": "your aws domainName.amazonaws.com"
+      "BUCKET_NAME": "",
+      "DOMAIN_NAME": ""
     },
   },
 }
