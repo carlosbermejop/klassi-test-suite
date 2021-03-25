@@ -1,4 +1,3 @@
-# Created by larryg at 11/01/2021
 @search
 Feature: Searching for apps with duckduckgo
   As an internet user
@@ -14,6 +13,5 @@ Feature: Searching for apps with duckduckgo
 
     Examples:
       |searchword  |
-#      |space 1999  |
-      |oup         |
-#      |angry birds |
+      |space 1999  |
+      |angry birds |

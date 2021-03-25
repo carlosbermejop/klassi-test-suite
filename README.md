@@ -17,15 +17,21 @@ node ./node_modules/klassi-js/index.js
 --pageObjects <path>                path to page objects. defaults to ./page-objects
 --sharedObjects <paths>             path to shared objects - repeatable. defaults to ./shared-objects
 --reports <path>                    output path to save reports. defaults to ./reports
---email [optional]                  sends email reports to stakeholders
+--disableReport                     disables the test report from opening after test completion
+--email                             sends email reports to stakeholders
 --env <path>                        name of environment to run the framework/test in. default to dev
 --reportName [optional]             name of what the report would be called i.e. 'klassi Automated Test'
---updateBaselineImages [optional]   automatically update the baseline image after a failed comparison
---closeBrowser [optional]           this closes the browser after each scenario, defaults to always, use 'none' if you want to want to keep the  browser open
+--updateBaselineImages              automatically update the baseline image after a failed comparison or new images
+--wdProtocol                        the switch to change the browser option from using devtools to webdriver
+--closeBrowser [optional]           this closes the browser after each scenario, defaults to always, use 'no' if you want to want to keep the  browser open
+```
+## Options Usage
+```bash
+  --closeBrowser no || this leaves the browser open after the session completes, useful when debugging test
 ```
 
 ## Directory Structure
-To help with usage of the built in functionality, we have added a klassirc.js file at the base of the project. You can checkout the [template here](https://github.com/larryg01/klassi-test-suite)
+We have added a '.envConfigrc.js' file at the base of the project it contains all your env config. You can checkout the [template here](https://github.com/larryg01/klassi-test-suite)
 
 ```bash
 .
@@ -35,13 +41,13 @@ To help with usage of the built in functionality, we have added a klassirc.js fi
     └── search.js
 └── shared-objects
     └── searchData.js
-└── step-definitions
+└── step_definitions
     └── search-steps.js
 └── reports  # folder and content gets created automatically on test run
     └── chrome
         ├── reportName-01-01-1900-235959.html
         └── reportName-01-01-1900-235959.json
-.envConfigrc.js # file contains all your environment variables #projectName, emailAddresses, environments, browserstack/lambdatest config, reportName
+.envConfigrc.js # this file contains all your environment variables #projectName, emailAddresses, environments, browserstack/lambdatest config
 ```
 
 ## Step definitions

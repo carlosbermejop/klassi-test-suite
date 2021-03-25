@@ -41,9 +41,11 @@ module.exports = {
     return image;
   },
   searchResult: async () => {
+    // let res;
     /** return the promise of an element to the following then */
     // eslint-disable-next-line no-shadow
     const elem = await browser.$(sharedObjects.searchData.elem.resultLink);
+    const res = elem.getHTML();
     if (browserName === 'iexplorer') {
       // do nothing
     } else {
@@ -51,8 +53,8 @@ module.exports = {
     }
     await browser.pause(DELAY_1s);
     /** verify this element has children */
-    console.log(elem); // prints to a log
-    expect(elem.length).to.not.equal(0);
+    console.log('this is the body ', res); // prints to a log
+    expect(res.length).to.not.equal(0);
     if (browserName === 'iexplorer') {
       // do nothing
     } else {

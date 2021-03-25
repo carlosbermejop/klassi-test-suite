@@ -1,12 +1,11 @@
 {
+  "projectName": "KlassiTech",
   "build": "Klassi Automated Test",
   "platform" : "Windows 10",
   "browserName" : "MicrosoftEdge",
   "version" : "86.0",
   "resolution" : "1280x1024",
   "selenium_version" : "3.13.0",
-  "console" : true,
-  "network" : true,
   "visual" : true,
   "edge.driver" : "86.0"
 }

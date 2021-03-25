@@ -1,4 +1,5 @@
 {
+  "projectName": "KlassiTech",
   "build": "Klassi Automated Test",
   "platform" : "Windows 10",
   "browserName" : "Chrome",
