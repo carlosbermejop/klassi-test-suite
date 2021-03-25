@@ -12,7 +12,7 @@ node ./node_modules/klassi-js/index.js
 ```bash
 --browser [optional]                name of browser to use. defaults to chrome
 --tags <@tagName>                   name of tags to run - Multiple TAGS usage
---steps <path>                      path to step definitions. defaults to ./step-definitions
+--steps <path>                      path to step definitions. defaults to ./step_definitions
 --featureFiles <path>               path to feature definitions. defaults to ./features
 --pageObjects <path>                path to page objects. defaults to ./page-objects
 --sharedObjects <paths>             path to shared objects - repeatable. defaults to ./shared-objects
@@ -20,7 +20,7 @@ node ./node_modules/klassi-js/index.js
 --disableReport                     disables the test report from opening after test completion
 --email                             sends email reports to stakeholders
 --env <path>                        name of environment to run the framework/test in. default to dev
---reportName [optional]             name of what the report would be called i.e. 'klassi Automated Test'
+--reportName [optional]             name of what the report would be called i.e. 'Automated Test'
 --updateBaselineImages              automatically update the baseline image after a failed comparison or new images
 --wdProtocol                        the switch to change the browser option from using devtools to webdriver
 --closeBrowser [optional]           this closes the browser after each scenario, defaults to always, use 'no' if you want to want to keep the  browser open
@@ -28,26 +28,6 @@ node ./node_modules/klassi-js/index.js
 ## Options Usage
 ```bash
   --closeBrowser no || this leaves the browser open after the session completes, useful when debugging test
-```
-
-## Directory Structure
-We have added a '.envConfigrc.js' file at the base of the project it contains all your env config. You can checkout the [template here](https://github.com/larryg01/klassi-test-suite)
-
-```bash
-.
-└── features
-    └── search.feature
-└── page-objects
-    └── search.js
-└── shared-objects
-    └── searchData.js
-└── step_definitions
-    └── search-steps.js
-└── reports  # folder and content gets created automatically on test run
-    └── chrome
-        ├── reportName-01-01-1900-235959.html
-        └── reportName-01-01-1900-235959.json
-.envConfigrc.js # this file contains all your environment variables #projectName, emailAddresses, environments, browserstack/lambdatest config
 ```
 
 ## Step definitions
