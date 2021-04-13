@@ -2,7 +2,7 @@
   "name": "klassi-test-suite",
   "version": "1.0.0",
   "browser": "index.js",
-  "license": "MIT",
+  "license": "Apache-2.0",
   "scripts": {
     "start": "node ./node_modules/klassi-js/index.js",
     "dev": "node ./node_modules/klassi-js/index.js --disableReport --tags",
