@@ -106,7 +106,7 @@ By default, the test run using Google Chrome/devtools protocol, to run tests usi
 | Chrome | `--wdProtocol --browser chrome` |
 | Firefox | `--wdProtocol --browser firefox` |
 
-All other browser configurations are available via 3rd party services (i.e. browserstack | lambdatest | sourcelab)
+All other browser configurations are available via 3rd party services (i.e. browserstack | lambdatest)
 
 Selenium Standalone Server installation
 ```bash
