@@ -12,6 +12,6 @@
     "ciltuat": "node ./node_modules/klassi-js/index.js --disableReport --email --tags @search --remoteService lambdatest --extraSettings"
   },
   "dependencies": {
-    "klassi-js": "https://github.com/larryg01/klassi-js.git"
+    "klassi-js": "^4.0.0"
   }
 }
