@@ -1,10 +1,18 @@
+***
+<p align="center">
+    <a href="https://github.com/larryg01/klassi-js/">
+        <img alt="Klassi-Js" src="./page-objects/100.png">
+    </a>
+</p>
+***
+
 # klassi-test-project 
-
+[![Webdriverio API](https://img.shields.io/badge/webdriverio-docs-40b5a4)](https://webdriver.io/docs/api.html)
+[![Join the chat at https://gitter.im/klassi-js/community](https://badges.gitter.im/klassi-js/community.svg)](https://gitter.im/klassi-js/community?utm_source=badge&utm_medium=badge&utm_campaign=pr-badge&utm_content=badge)
 ## Usage
-
+If you want to see how the frameworks 
 ```bash
-node ./node_modules/klassi-js/index.js 
-
+node ./node_modules/klassi-js/index.js
 ```
 
 ## Options
@@ -127,6 +135,21 @@ Most webdriverio methods return a [JavaScript Promise](https://spring.io/underst
     })
        done(); // <<- let cucumber know you're done
   });
+```
+## Demo
+To demo the framework without installing it into your project use the following commands:
+```js
+ # checkout this repo
+  git clone https://github.com/larryg01/klassi-js.git
+
+ # browser to the repo
+  cd klassi-js
+
+ # install the dependencies
+  yarn install
+
+ # run the search feature
+  node index.js --tags @search
 ```
 
 ## License

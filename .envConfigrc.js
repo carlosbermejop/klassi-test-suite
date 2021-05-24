@@ -21,11 +21,10 @@ module.exports = {
   },
 
   "dataConfig": {
-    "projectName": "projectName", // this is what your project will be called in LambdaTest/Browserstack
-                                  // it must also be placed in the Browser Capabilities
+    "projectName": "projectName", // project name used in LambdaTest/Browserstack
 
     "emailData": {
-      "emailList": "QA<test@test.com> ", // list of addresses your report will be emailed too
+      "emailList": "QA<test@test.com> ",
       "accessibilityReport": "Yes"
     },
 
