@@ -170,4 +170,4 @@ To demo the framework without installing it into your project use the following 
 
 ## License
 
-Licenced under [Apache License](LICENSE) &copy; 2016 [Larry Goddard](https://www.linkedin.com/in/larryg)
+Licenced under [MIT License](LICENSE) &copy; 2016 [Larry Goddard](https://www.linkedin.com/in/larryg)
