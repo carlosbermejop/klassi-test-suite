@@ -1,13 +1,30 @@
 
 <p align="center">
+    <h1 align="center" font-size: 2.5em > klassi-js <br>
     <a href="https://github.com/larryg01/klassi-js/">
-        <img alt="Klassi-Js" src="./page-objects/100.png">
-    </a>
-</p>
+        <img alt="Klassi-Js" src="./node_modules/klassi-js/runtime/img/klassiLogo.png">
+    </a> </h1> </p>
 
-# klassi-test-project 
-[![Webdriverio API](https://img.shields.io/badge/webdriverio-docs-40b5a4)](https://webdriver.io/docs/api.html)
-[![Join the chat at https://gitter.im/klassi-js/community](https://badges.gitter.im/klassi-js/community.svg)](https://gitter.im/klassi-js/community?utm_source=badge&utm_medium=badge&utm_campaign=pr-badge&utm_content=badge)
+<p align="center">
+    <a href ="https://travis-ci.org/larryg01/klassi-js">
+    <img alt="Build Status" src="https://travis-ci.org/larryg01/klassi-js.svg?branch=master">
+    </a> 
+    <a href="https://github.com/larryg01/klassi-js/blob/master/LICENSE">
+    <img alt="License" src="https://img.shields.io/github/license/larryg01/klassi-js">
+    </a> 
+    <a href="https://gitter.im/klassi-js/klassi-js">
+    <img alt="Gitter" src="https://badges.gitter.im/klassi-js/klassi-js.svg">
+    </a>
+    <a href="https://webdriver.io/">
+    <img alt="WebdriverIO" src="https://img.shields.io/badge/tested%20with-webdriver.io-%23ea5906">
+    </a>
+    <a href="https://webdriver.io/docs/api.html">
+    <img alt="WebdriverIO" src="https://img.shields.io/badge/webdriverio-docs-40b5a4">
+    </a> <br>
+  klassi-Js is a debuggable BDD Javascript test automation framework. Built on <a href="http://webdriver.io/"> webdriver.io <a/> (Next-gen browser and mobile automation test framework for Node.js)</a> and <a href="https://github.com/cucumber/cucumber-js"> cucumber-js </a> with integrated Visual, accessibility and API Testing, your test can run locally or in the cloud using Lambdatest, BrowserStack or Sauce Labs 
+</p>
+ 
+
 ## Usage
 If you want to see how the frameworks 
 ```bash
