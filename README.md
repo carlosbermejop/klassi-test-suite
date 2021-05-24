@@ -1,10 +1,9 @@
-***
+
 <p align="center">
     <a href="https://github.com/larryg01/klassi-js/">
         <img alt="Klassi-Js" src="./page-objects/100.png">
     </a>
 </p>
-***
 
 # klassi-test-project 
 [![Webdriverio API](https://img.shields.io/badge/webdriverio-docs-40b5a4)](https://webdriver.io/docs/api.html)
