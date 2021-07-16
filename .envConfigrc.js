@@ -29,21 +29,24 @@ module.exports = {
     "dev": {
       "envName": "DEVELOPMENT",
       "base_url": "https://duckduckgo.com/",
+      "api_base_url": "http://httpbin.org/"
     },
 
     "test": {
       "envName": "TEST",
       "base_url": "https://duckduckgo.com/",
+      "api_base_url": "http://httpbin.org/",
     },
 
     "uat": {
       "envName": "UAT",
-      "base_url": "https://duckduckgo.com/"
+      "base_url": "https://duckduckgo.com/",
+      "api_base_url": "http://httpbin.org/"
     }
   },
 
   "dataConfig": {
-    "projectName": "projectName", // project name used in LambdaTest/Browserstack
+    "projectName": "klassi-js", // project name used in LambdaTest/Browserstack
 
     "emailData": {
       "emailList": "QA<test@test.com> ",

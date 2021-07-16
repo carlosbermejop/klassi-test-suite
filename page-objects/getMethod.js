@@ -5,11 +5,10 @@ module.exports = {
    * making a call to the Api
    */
   getCall: async () => {
-    // eslint-disable-next-line no-undef
     const url = env.api_base_url;
-    const method = 'GET';
+    const method = 'get';
 
-    res = await helpers.apiCall(url, method);
+    res = await helpers.apiCall(url + method);
   },
   /**
    * Getting the Response Timing

@@ -5,7 +5,7 @@
   "license": "MIT",
   "scripts": {
     "start": "node ./node_modules/klassi-js/index.js",
-    "dev": "node ./node_modules/klassi-js/index.js --disableReport --tags",
+    "dev": "node ./node_modules/klassi-js/index.js --disableReport --tags @search",
     "bslocal": "node ./node_modules/klassi-js/index.js --disableReport --remoteService browserstack --extraSettings",
     "cibsdev": "node ./node_modules/klassi-js/index.js --disableReport --email --tags @search --remoteService browserstack --extraSettings",
     "ltlocal": "node ./node_modules/klassi-js/index.js --disableReport --remoteService lambdatest --extraSettings",
