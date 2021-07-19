@@ -1419,9 +1419,10 @@ keyv@^4.0.0:
   dependencies:
     json-buffer "3.0.1"
 
-"klassi-js@https://github.com/larryg01/klassi-js#develop":
-  version "4.0.1"
-  resolved "https://github.com/larryg01/klassi-js#21d3edd59f9b84062893131a7cc60680f6d9050d"
+klassi-js@^4.0.2:
+  version "4.0.2"
+  resolved "https://registry.yarnpkg.com/klassi-js/-/klassi-js-4.0.2.tgz#d46cd800c2c060cce34322c7666e8cc17c780ca1"
+  integrity sha512-wOROe2FWHgx2vWYSexjGjo3Z1u/OUWm1IuKV9CaF5z8ae2g47qZ2R+38nDRtLPxwmMVU69K0U0PW6VHrsKJfLg==
   dependencies:
     "@cucumber/cucumber" "^7.0.0"
     "@cucumber/pretty-formatter" "^1.0.0-alpha.1"
