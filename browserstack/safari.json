@@ -1,12 +1,12 @@
 {
   "project": "projectName",
 
-  "os": "Windows",
-  "os_version": "10",
-  "browser": "Edge",
-  "browserName": "Edge",
-  "browser_version": "latest",
-  "resolution": "1280x800",
+  "os": "OS X",
+  "os_version": "Mojave",
+  "browser": "Safari",
+  "browserName": "Safari",
+  "browser_version": "12.1",
+  "resolution": "1280x960",
 
   "javascriptEnabled":true,
   "locationContextEnabled":true,
@@ -17,5 +17,6 @@
   "acceptSslCerts": true,
   "browserstack.debug": true,
   "browserstack.networkLogs": true,
-  "browserstack.selenium_version" : "3.5.2"
+  "browserstack.selenium_version2": "3.141.5",
+  "browserstack.selenium_version": "3.14.0"
 }

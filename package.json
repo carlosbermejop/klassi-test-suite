@@ -1,5 +1,5 @@
 {
-  "name": "klassi-test-suite",
+  "name": "project-name",
   "version": "1.0.0",
   "browser": "index.js",
   "license": "MIT",
@@ -10,8 +10,9 @@
     "cibsdev": "node ./node_modules/klassi-js/index.js --disableReport --email --tags @search --remoteService browserstack --extraSettings",
     "ltlocal": "node ./node_modules/klassi-js/index.js --disableReport --remoteService lambdatest --extraSettings",
     "ciltuat": "node ./node_modules/klassi-js/index.js --disableReport --email --tags @search --remoteService lambdatest --extraSettings"
+
   },
   "dependencies": {
-    "klassi-js": "^4.0.1"
+    "klassi-js": "https://github.com/larryg01/klassi-js#develop"
   }
 }

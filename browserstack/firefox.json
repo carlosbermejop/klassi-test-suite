@@ -3,13 +3,11 @@
 
   "os": "Windows",
   "os_version": "10",
-  "browser": "Chrome",
-  "browserName": "Chrome",
-  "browser_version": "87",
+  "browser": "Firefox",
+  "browserName": "Firefox",
+  "browser_version": "latest",
   "resolution": "1280x800",
-  "chromeOptions": {
-    "args": ["disable-infobars"]
-  },
+  "browserstack.geckodriver": "0.19.0",
 
   "javascriptEnabled":true,
   "locationContextEnabled":true,
@@ -19,5 +17,6 @@
 
   "acceptSslCerts": true,
   "browserstack.debug": true,
-  "browserstack.networkLogs": true
+  "browserstack.networkLogs": true,
+  "browserstack.selenium_version": "3.10.0"
 }

@@ -1,5 +1,5 @@
 {
-  "project":"projectName",
+  "project": "projectName",
 
   "tabletiPad": {
     "desiredCapabilities": {
@@ -16,7 +16,6 @@
       "logLevel": "silent",
 
       "acceptSslCerts": true,
-      "browserstackLocal": true,
       "browserstack.debug": true,
       "browserstack.networkLogs": true
     },
