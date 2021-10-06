@@ -48,9 +48,9 @@ module.exports = {
     const res = elem.getHTML();
     if (browserName === 'iexplorer') {
       // do nothing
-    } else {
-      await helpers.takeImage(`${image}_1-2.png`, sharedObjects.searchData.elem.leftBadge);
     }
+    await helpers.takeImage(`${image}_1-2.png`, sharedObjects.searchData.elem.leftBadge);
+
     await browser.pause(DELAY_1s);
     /** verify this element has children */
     console.log('this is the body ', res); // prints to a log
