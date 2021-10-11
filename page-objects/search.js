@@ -47,7 +47,7 @@ module.exports = {
     const elem = await browser.$(sharedObjects.searchData.elem.resultLink);
     const res = elem.getHTML();
     if (browserName === 'iexplorer') {
-      // do nothing
+      process.exit();
     }
     await helpers.takeImage(`${image}_1-2.png`, sharedObjects.searchData.elem.leftBadge);
 
@@ -56,7 +56,7 @@ module.exports = {
     console.log('this is the body ', res); // prints to a log
     expect(res.length).to.not.equal(0);
     if (browserName === 'iexplorer') {
-      // do nothing
+      process.exit();
     } else {
       await helpers.compareImage(`${image}_1-2.png`);
     }
