@@ -25,8 +25,18 @@
 </p>
  
 
+## Pre Installation
+
+<a>Please check that you have these applications installed on your PC/Mac:
+<li><a href="https://nodejs.org/">NodeJs</a></li>
+<li><a href="http://java.sun.com/javase/downloads/index.jsp">Java JDK</a></li>
+<li><a href="https://Atlassian.com/git/tutorials/install-git">Git</a> – You need to have an account on GitHub first</li> 
+<li><a href="https://yarnpkg.com">Yarn</a></li></p>
+If not, download and install them with just the default configuration, it is enough for framework usages.
+
+
 ## Usage
-If you want to see how the frameworks 
+
 ```bash
 node ./node_modules/klassi-js/index.js
 ```
@@ -80,7 +90,7 @@ await helpers.takeImage('flower_1-0.png', 'div.badge-link--serp.ddg-extension-hi
 await helpers.compareImage('flower_1-0.png');
 
 // get the content of an endpoint
-await helpers.apiCall('http://httpbin.org/', 'get');
+await helpers.apiCall('http://httpbin.org/get', 'get');
 
 // writing content to a text file
 await helpers.writeToTxtFile(filepath, output);
