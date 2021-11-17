@@ -144,8 +144,9 @@ All other browser configurations are available via 3rd party services (i.e. brow
 
 Selenium Standalone Server installation
 ```bash
-yarn global add selenium-standalone@latest
-selenium-standalone install && selenium-standalone start
+npm install -g selenium-standalone@latest
+selenium-standalone install
+selenium-standalone start
 ```
 
 ## How to debug
