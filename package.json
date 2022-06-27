@@ -13,13 +13,13 @@
   "license": "MIT",
   "scripts": {
     "start": "node ./node_modules/klassi-js/index.js",
-    "dev": "node ./node_modules/klassi-js/index.js --disableReport --tags",
+    "dev": "node --trace-warnings  ./node_modules/klassi-js/index.js --disableReport --tags",
     "bslocal": "node ./node_modules/klassi-js/index.js --disableReport --remoteService browserstack --extraSettings",
     "cibsdev": "node ./node_modules/klassi-js/index.js --disableReport --email --tags @search --remoteService browserstack --extraSettings",
     "ltlocal": "node ./node_modules/klassi-js/index.js --disableReport --remoteService lambdatest --extraSettings",
     "ciltuat": "node ./node_modules/klassi-js/index.js --disableReport --email --tags @search --remoteService lambdatest --extraSettings"
   },
   "dependencies": {
-    "klassi-js": "https://github.com/larryg01/klassi-js.git"
+    "klassi-js": "https://github.com/larryg01/klassi-js.git#develop"
   }
 }
