@@ -25,27 +25,19 @@
 </p>
  
 
-## Pre Installation
-
-<a>Please check that you have these applications installed on your PC/Mac:
-<li><a href="https://nodejs.org/">NodeJs</a></li>
-<li><a href="http://java.sun.com/javase/downloads/index.jsp">Java JDK</a></li>
-<li><a href="https://Atlassian.com/git/tutorials/install-git">Git</a> – You need to have an account on GitHub first</li> 
-<li><a href="https://yarnpkg.com">Yarn</a></li></p>
-If not, download and install them with just the default configuration, it is enough for framework usages.
-
-
 ## Usage
-
+After checking out the template go to the project root and run:
 ```bash
-node ./node_modules/klassi-js/index.js
+yarn install
 ```
 
 ## Options
 
 ```bash
---browser [optional]                name of browser to use. defaults to chrome
---tags <@tagName>                   name of tags to run - Multiple TAGS usage
+--help                              output usage information
+--version                           output the version number
+--browser <name>                    name of browser to use (chrome, firefox). defaults to chrome
+--tags <@tagName>                   name of cucumber tags to run - Multiple TAGS usage
 --steps <path>                      path to step definitions. defaults to ./step_definitions
 --featureFiles <path>               path to feature definitions. defaults to ./features
 --pageObjects <path>                path to page objects. defaults to ./page-objects
@@ -54,28 +46,18 @@ node ./node_modules/klassi-js/index.js
 --disableReport                     disables the test report from opening after test completion
 --email                             sends email reports to stakeholders
 --env <path>                        name of environment to run the framework/test in. default to dev
---reportName [optional]             name of what the report would be called i.e. 'Automated Test'
---updateBaselineImages              automatically update the baseline image after a failed comparison or new images
+--reportName <optional>             name of what the report would be called i.e. 'Automated Test'
+--remoteService <optional>          which remote driver service, if any, should be used e.g. lambdatest
+--extraSettings <optional>          further piped configs split with pipes
+--updateBaselineImages              automatically update the baseline image after a failed comparison
 --wdProtocol                        the switch to change the browser option from using devtools to webdriver
---closeBrowser [optional]           this closes the browser after each scenario, defaults to always, use 'no' if you want to want to keep the  browser open
+--dlink                             the switch for projects with their test suite, within a Test folder of the repo
+--closeBrowser <optional>           this closes the browser after each scenario, defaults to always, use 'no' if you want to want to keep the  browser open
 ```
 ## Options Usage
 ```bash
   --closeBrowser no || this leaves the browser open after the session completes, useful when debugging test
 ```
-
-## Step definitions
-The following variables are available within the ```Given()```, ```When()``` and ```Then()``` functions:
-
-| Variable | Description |
-| :--- | :---  |
-| `browser`     | an instance of [webdriverio](https://webdriver.io/docs/setuptypes.html) (_the browser_) |
-| `pageObjects`       | collection of **page** objects loaded from disk and keyed by filename |
-| `sharedObjects`     | collection of **shared** objects loaded from disk and keyed by filename |
-| `helpers`    | a collection of [helper methods](runtime/helpers.js) _things webdriver.io does not provide but really should!_ |
-| `expect`     | instance of [chai expect](https://www.chaijs.com/api/bdd/) to ```expect('something').to.equal('something')``` |
-| `assert`     | instance of [chai assert](https://www.chaijs.com/api/assert/) to ```assert.isOk('everything', 'everything is ok')``` |
-
 
 ## Helpers
 Klassi-js contains a few helper methods to help along the way, these methods are:
@@ -144,9 +126,8 @@ All other browser configurations are available via 3rd party services (i.e. brow
 
 Selenium Standalone Server installation
 ```bash
-npm install -g selenium-standalone@latest
-selenium-standalone install
-selenium-standalone start
+yarn global add selenium-standalone@latest
+selenium-standalone install && selenium-standalone start
 ```
 
 ## How to debug
