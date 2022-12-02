@@ -22,67 +22,58 @@
  */
 module.exports = {
   /**
-   * this is for your project environment setups
-   * all relevant details for each environment i.e. username, passwords etc.
+   * this is for your environment setups
    */
   "environment": {
     "dev": {
       "envName": "DEVELOPMENT",
-      "base_url": "https://duckduckgo.com/",
-      "api_base_url": "http://httpbin.org/get"
+      "web_url": "https://duckduckgo.com/",
+      "web_utam_url": "https://google.com/",
+      "siteBaseUrl" : 'https://test.account.oup.com',
+      "apiBaseUrl" : '/api/',
+      "api_base_url": "http://httpbin.org/get",
+      "salesforceInstanceUrl": "https://oxforduniversitypressespaa-dev-ed.my.salesforce.com",
+      "mailinatorApiBaseUrl": "https://mailinator.com/api/v2/domains/public/inboxes"
     },
 
     "test": {
       "envName": "TEST",
-      "base_url": "https://duckduckgo.com/",
+      "web_url" :"https://duckduckgo.com/",
+      "web_utam_url": "https://google.com/",
+      "siteBaseUrl" : 'https://test.account.oup.com',
+      "apiBaseUrl" : '/api/',
       "api_base_url": "http://httpbin.org/get",
+      "salesforceInstanceUrl": "https://oxforduniversitypressespaa-dev-ed.my.salesforce.com",
+      "mailinatorApiBaseUrl": "https://mailinator.com/api/v2/domains/public/inboxes"
     },
 
-    "uat": {
-      "envName": "UAT",
-      "base_url": "https://duckduckgo.com/",
-      "api_base_url": "http://httpbin.org/get"
+    "android": {
+      "envName": "android",
+      "appName": "oxford.learners.bookshelf.canary",
+      "appPath": "https://olb-android-release.s3-accelerate.amazonaws.com/test/olb-5.9.3-canary.apk"
+    },
+
+    "ios": {
+      "envName": "ios",
+      "appName": "io.appium.TestApp",
+      "appPath": "http://appium.github.io/appium/assets/TestApp9.4.app.zip"
     }
   },
 
   "dataConfig": {
-    "projectName": "klassi-js", // project name used in LambdaTest/Browserstack
+    "projectName": "klassi test suite ",
+    "s3FolderName": "klassi-js",
 
     "emailData": {
-      "emailList": "QA<test@test.com> ",
-      "accessibilityReport": "Yes"
+      "nameList": 'QaAutoTest <qaautotest@oup.com>',
+      "AccessibilityReport": "Yes",
+      "SES_REGION": "eu-west-1"
     },
 
-    /**
-     * if you are using browserStack fill in your details here
-     * the delete lttunnel below and the lambdatest folder
-     */
-    "bslocal": {
-      "localIdentifier": "",
-      "userName": "",
-      "accessKey": ""
-    },
-
-    /**
-     *  if you are using lambdatest fill in your details here
-     *  then delete bslocal above and the browserstack folder
-     */
-    "ltlocal": {
-      "userName": "",
-      "accessKey": ""
-    },
-
-    /**
-     * if you are using AWS for storing and processing reports
-     * Else this can be deleted
-     */
-    "awsConfig": {
-      "s3FolderName": "", // This must match your Github Repo Name exactly (minus the .git)
-      "ID": "",
-      "SECRET": "",
-      "REGION": "",
-      "BUCKET_NAME": "",
-      "DOMAIN_NAME": ""
-    },
+    "s3Data":{
+      "S3_BUCKET": "test-app-automated-reports",
+      "S3_REGION": "eu-west-2",
+      "S3_DOMAIN_NAME": "http://test-app-automated-reports.s3.eu-west-2.amazonaws.com"
+    }
   },
 }

@@ -7,58 +7,36 @@ module.exports = {
    * @param {string} searchWord
    * @returns {Promise} a promise to enter the search values
    */
-  performSearch: async (searchWord) => {
+  performWebSearch: async (searchWord) => {
     image = searchWord;
-    await helpers.takeImage(`${image}_1-0.png`);
     elem = await browser.$(sharedObjects.searchData.elem.searchInput);
-    await elem.setValue(searchWord);
-    if (browserName === 'iexplorer') {
-      // do nothing
-    } else {
-      /** Accessibility verification */
-      await accessibilityLib.getAccessibilityReport(`SearchPage-${searchWord}`);
-      await helpers.takeImage(`${image}_1-1.png`, sharedObjects.searchData.elem.leftBadge);
-    }
-
-    const title = await browser.getTitle();
-    console.log(`this is checking whats being returned:- ${title}`);
-    elem = await browser.$(sharedObjects.searchData.elem.searchBtn);
-    await elem.click();
-    await browser.pause(DELAY_2s);
-    console.log('Search function completed');
-    if (browserName === 'iexplorer') {
-      // do nothing
-    } else {
-      /** Accessibility verification */
-      await accessibilityLib.getAccessibilityReport(`SearchPage-${searchWord}`);
-      /** Accessibility Total error count/violations */
-      // eslint-disable-next-line no-undef
-      cucumberThis.attach(`Accessibility Error Count : ${accessibilityLib.getAccessibilityTotalError()}`);
-      await helpers.compareImage(`${image}_1-1.png`);
-    }
+    await helpers.takeImage(`${image}_1-0.png`);
     await helpers.compareImage(`${image}_1-0.png`);
-    console.log('images have been compared');
+    await elem.addValue(searchWord);
+    /** Accessibility verification */
+    // eslint-disable-next-line no-undef
+    await accessibilityLib.getAccessibilityReport(`SearchPage-${searchWord}`);
+    await helpers.takeImage(`${image}_1-1.png`, sharedObjects.searchData.elem.leftBadge);
+    const title = await browser.getTitle();
+    console.log(`checking what title being returned:- ${title}`);
+    await helpers.compareImage(`${image}_1-1.png`);
+    await browser.keys('Enter');
+    // eslint-disable-next-line no-undef
+    /** Accessibility verification */
+    // eslint-disable-next-line no-undef
+    await accessibilityLib.getAccessibilityReport(`SearchPage-${searchWord}`);
+    /** Accessibility Total error count/violations */
+    // eslint-disable-next-line no-undef
+    cucumberThis.attach(`Accessibility Error Count : ${accessibilityLib.getAccessibilityTotalError()}`);
     return image;
   },
   searchResult: async () => {
-    // let res;
     /** return the promise of an element to the following then */
-    // eslint-disable-next-line no-shadow
-    const elem = await browser.$(sharedObjects.searchData.elem.resultLink);
-    const res = elem.getHTML();
-    if (browserName === 'iexplorer') {
-      process.exit();
-    }
-    await helpers.takeImage(`${image}_1-2.png`, sharedObjects.searchData.elem.leftBadge);
-
+    elem = await browser.$(sharedObjects.searchData.elem.resultLink);
+    await helpers.takeImage(`${image}-results_1-2.png`, sharedObjects.searchData.elem.leftBadge);
     await browser.pause(DELAY_1s);
     /** verify this element has children */
-    console.log('this is the body ', res); // prints to a log
-    expect(res.length).to.not.equal(0);
-    if (browserName === 'iexplorer') {
-      process.exit();
-    } else {
-      await helpers.compareImage(`${image}_1-2.png`);
-    }
+    expect(elem.length).to.not.equal(0);
+    await helpers.compareImage(`${image}-results_1-2.png`);
   },
 };

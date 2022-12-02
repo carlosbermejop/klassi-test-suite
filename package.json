@@ -7,19 +7,40 @@
     "email": "larryg@klassitech.co.uk",
     "twitter": "@larryG_01",
     "gitter": "https://gitter.im/klassi-js/klassi-js",
-    "url": "https://linkedin.com/in/larryg"
+    "url": "https://linkedin.com/in/larryg",
+    "youtube": "https://youtube.com/@larryg_01"
   },
   "browser": "index.js",
   "license": "MIT",
   "scripts": {
-    "start": "node ./node_modules/klassi-js/index.js",
-    "dev": "node --trace-warnings  ./node_modules/klassi-js/index.js --disableReport --tags",
-    "bslocal": "node ./node_modules/klassi-js/index.js --disableReport --remoteService browserstack --extraSettings",
-    "cibsdev": "node ./node_modules/klassi-js/index.js --disableReport --email --tags @search --remoteService browserstack --extraSettings",
+    "dev": "yarn delete-dev && yarn dev1",
+    "delete-dev": "rm -rf ./reports ./artifacts ./log ./visual-regression-baseline",
+    "dev1": "node ./node_modules/klassi-js/index.js --disableReport --tags",
     "ltlocal": "node ./node_modules/klassi-js/index.js --disableReport --remoteService lambdatest --extraSettings",
-    "ciltuat": "node ./node_modules/klassi-js/index.js --disableReport --email --tags @search --remoteService lambdatest --extraSettings"
+    "ciltuat": "nyc node ./node_modules/klassi-js/index.js --disableReport --email --env dev --tags @tagName --remoteService lambdatest --extraSettings",
+    "ciltdev": "nyc node ./node_modules/klassi-js/index.js --disableReport --email --env dev --tags @tagName --remoteService lambdatest --extraSettings",
+    "ciltXXX": "node ./node_modules/klassi-js/index.js --disableReport --env dev --tags @s3 --remoteService lambdatest --extraSettings",
+    "pkgcheck": "yarn install --check-files"
   },
   "dependencies": {
-    "klassi-js": "https://github.com/larryg01/klassi-js.git#develop"
+    "klassi-js": "larryg01/klassi-js.git",
+    "nyc": "^15.1.0"
+  },
+  "nyc": {
+    "statements": 80,
+    "branches": 80,
+    "functions": 80,
+    "lines": 80,
+    "include": [
+      "**/page-objects/**"
+    ],
+    "exclude": [
+      "**/features/s3Report.feature"
+    ],
+    "reporter": [
+      "html",
+      "text",
+      "text-summary"
+    ]
   }
 }
