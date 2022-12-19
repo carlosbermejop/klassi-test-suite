@@ -15,7 +15,7 @@
   "scripts": {
     "dev": "yarn delete-dev && yarn dev1",
     "delete-dev": "rm -rf ./reports ./artifacts ./log ./visual-regression-baseline",
-    "dev1": "node ./node_modules/klassi-js/index.js --disableReport --tags",
+    "dev1": "node ./node_modules/klassi-js/index.js --tags",
     "ltlocal": "node ./node_modules/klassi-js/index.js --disableReport --remoteService lambdatest --extraSettings",
     "ciltuat": "nyc node ./node_modules/klassi-js/index.js --disableReport --email --env dev --tags @tagName --remoteService lambdatest --extraSettings",
     "ciltdev": "nyc node ./node_modules/klassi-js/index.js --disableReport --email --env dev --tags @tagName --remoteService lambdatest --extraSettings",
@@ -23,7 +23,7 @@
     "pkgcheck": "yarn install --check-files"
   },
   "dependencies": {
-    "klassi-js": "larryg01/klassi-js.git",
+    "klassi-js": "larryg01/klassi-js#poc/cucumber-v8-upgrade",
     "nyc": "^15.1.0"
   },
   "nyc": {
