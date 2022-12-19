@@ -1,26 +1,3 @@
 const cucumberjs = require('klassi-js/cucumber');
 
 module.exports = cucumberjs;
-
-// const path = require('path');
-//
-// const options = {
-//   default: {
-//     require: ['node_modules/klassi-js/runtime/world.js', 'step_definitions/**/*.js'],
-//     tags: global.resultingString,
-//     format: [
-//       '@cucumber/pretty-formatter',
-//       `json:${path.resolve(
-//         __dirname,
-//         global.paths.reports,
-//         browserName,
-//         env.envName,
-//         `${reportName}-${dateTime}.json`
-//       )}`,
-//     ],
-//     formatOptions: {
-//       colorsEnabled: true,
-//     },
-//   },
-// };
-// module.exports = options;
