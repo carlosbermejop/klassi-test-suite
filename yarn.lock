@@ -1939,9 +1939,9 @@ css-value@^0.0.1:
   resolved "https://registry.yarnpkg.com/css-value/-/css-value-0.0.1.tgz#5efd6c2eea5ea1fd6b6ac57ec0427b18452424ea"
   integrity sha512-FUV3xaJ63buRLgHrLQVlVgQnQdR4yqdLGaDu7g8CQcWjInDfM9plBTPI9FRfpahju1UBSaMckeb2/46ApS/V1Q==
 
-"cucumber-html-reporter@https://github.com/larryg01/cucumber-html-reporter#poc/upgrading":
+"cucumber-html-reporter@https://github.com/larryg01/cucumber-html-reporter#poc/upgradedFunctionality":
   version "5.2.0"
-  resolved "https://github.com/larryg01/cucumber-html-reporter#800398c10be9de7d0fad0be22af109af19ab676c"
+  resolved "https://github.com/larryg01/cucumber-html-reporter#1b2b6d3b5c26049e2be7cb7b36c434c4144bc797"
   dependencies:
     chalk "4.1.2"
     find "^0.3.0"
@@ -3142,9 +3142,9 @@ keyv@^4.5.2:
   dependencies:
     json-buffer "3.0.1"
 
-klassi-js@larryg01/klassi-js#poc/cucumber-v8-upgrade:
+klassi-js@larryg01/klassi-js#poc/webdriverio-v8-upgrade:
   version "4.1.0"
-  resolved "https://codeload.github.com/larryg01/klassi-js/tar.gz/aa21983dd055f94de3683d9b98e639fe2b27d61b"
+  resolved "https://codeload.github.com/larryg01/klassi-js/tar.gz/823a44038658fa2d6c878db8287e23805874b2db"
   dependencies:
     "@aws-sdk/client-ses" "^3.226.0"
     "@cucumber/cucumber" "^8.9.0"
@@ -3155,7 +3155,7 @@ klassi-js@larryg01/klassi-js#poc/cucumber-v8-upgrade:
     chai "^4.3.7"
     commander "^9.4.1"
     cosmiconfig "^8.0.0"
-    cucumber-html-reporter "https://github.com/larryg01/cucumber-html-reporter#poc/upgrading"
+    cucumber-html-reporter "https://github.com/larryg01/cucumber-html-reporter#poc/upgradedFunctionality"
     cucumber-junit "^1.7.1"
     dotenv "^16.0.3"
     fs-extra "^11.1.0"

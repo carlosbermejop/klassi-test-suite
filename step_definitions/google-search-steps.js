@@ -13,7 +13,9 @@ Given(/^The user navigates to Google$/, async () => {
     const google = await utam.load(Google);
     const acceptModalBtn = await google.getAcceptModalBtn();
     await acceptModalBtn.click();
-    await google.waitForAbsence();
+    if(process.platform !== 'darwin'){
+      await google.waitForAbsence();
+    }
   }
 });
 When(/^They use the engine to search for a word$/, async () => {
