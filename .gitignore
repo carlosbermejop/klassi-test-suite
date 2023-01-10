@@ -12,9 +12,6 @@ artifacts
 shared-objects/docs/userAgent.txt
 visual-regression-baseline
 
-.env
-.env.*
-
 # NYC
 coverage
 .nyc_output
