@@ -23,7 +23,7 @@
     "pkgcheck": "yarn install --check-files"
   },
   "dependencies": {
-    "klassi-js": "larryg01/klassi-js#poc/webdriverio-v8-upgrade",
+    "klassi-js": "larryg01/klassi-js#testfix/webdriverio-v8-upgrade",
     "nyc": "^15.1.0"
   },
   "nyc": {

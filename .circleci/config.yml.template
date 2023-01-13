@@ -149,35 +149,35 @@ workflows:
   build_and_test:
     jobs:
       - acceptance_test_chrome:
-          context: klassi-js-framework
+          context: klassi-framework
           <<: *filter_only_releasable_branches
 
       - acceptance_test_edge:
-          context: klassi-js-framework
+          context: klassi-framework
           <<: *filter_only_releasable_branches
 
       - acceptance_test_safari:
-          context: klassi-js-framework
+          context: klassi-framework
           <<: *filter_only_releasable_branches
 
       - acceptance_test_firefox:
-          context: klassi-js-framework
+          context: klassi-framework
           <<: *filter_only_releasable_branches
 
       - acceptance_test_tabletGalaxy:
-          context: klassi-js-framework
+          context: klassi-framework
           <<: *filter_only_releasable_branches
 
       - acceptance_test_tabletiPad:
-          context: klassi-js-framework
+          context: klassi-framework
           <<: *filter_only_releasable_branches
 
       - dev_acceptance_test_edge:
-          context: klassi-js-framework
+          context: klassi-framework
           <<: *filter_only_integration_branches
 
       - dev_acceptance_test_chrome:
-          context: klassi-js-framework
+          context: klassi-framework
           <<: *filter_only_integration_branches
 
   nightly_run:
@@ -191,14 +191,14 @@ workflows:
 
     jobs:
       - acceptance_test_chrome:
-          context: klassi-js-framework
+          context: klassi-framework
       - acceptance_test_firefox:
-          context: klassi-js-framework
+          context: klassi-framework
       - acceptance_test_edge:
-          context: klassi-js-framework
+          context: klassi-framework
       - acceptance_test_tabletiPad:
-          context: klassi-js-framework
+          context: klassi-framework
       - acceptance_test_tabletGalaxy:
-          context: klassi-js-framework
+          context: klassi-framework
       - acceptance_test_safari:
-          context: klassi-js-framework
+          context: klassi-framework

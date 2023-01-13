@@ -289,7 +289,7 @@
     "@aws-sdk/types" "3.226.0"
     tslib "^2.3.1"
 
-"@aws-sdk/credential-provider-node@3.245.0":
+"@aws-sdk/credential-provider-node@3.245.0", "@aws-sdk/credential-provider-node@^3.245.0":
   version "3.245.0"
   resolved "https://registry.yarnpkg.com/@aws-sdk/credential-provider-node/-/credential-provider-node-3.245.0.tgz#3df89fa2668940902b4c16c28df3d4e30b907ad2"
   integrity sha512-Dwv8zmRLTDLeEkGrK/sLNFZSC+ahXZxr07CuID054QKACIdUEvkqYlnalRiTeXngiHGQ54u8wU7f0D32R2oL0g==
@@ -2948,11 +2948,12 @@ keyv@^4.5.2:
   dependencies:
     json-buffer "3.0.1"
 
-klassi-js@larryg01/klassi-js#poc/webdriverio-v8-upgrade:
+klassi-js@larryg01/klassi-js#testfix/webdriverio-v8-upgrade:
   version "4.1.0"
-  resolved "https://codeload.github.com/larryg01/klassi-js/tar.gz/3b65f684fdf8482d0023a924fe1ee504575cea61"
+  resolved "https://codeload.github.com/larryg01/klassi-js/tar.gz/94da03bfb745d08d57a708718d0f5a5dfc1c4665"
   dependencies:
     "@aws-sdk/client-ses" "^3.226.0"
+    "@aws-sdk/credential-provider-node" "^3.245.0"
     "@cucumber/cucumber" "^8.9.0"
     "@cucumber/pretty-formatter" "^1.0.0"
     async "^3.2.4"
