@@ -10,7 +10,6 @@ log
 reports
 artifacts
 shared-objects/docs/userAgent.txt
-visual-regression-baseline
 
 # NYC
 coverage
