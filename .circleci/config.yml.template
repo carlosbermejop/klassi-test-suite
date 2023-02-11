@@ -38,7 +38,7 @@ jobs:
   ###########################################
   acceptance_test_base: &acceptance_test_base
     docker:
-      - image: cimg/node:14.19.0-browsers
+      - image: cimg/node:18.12.1-browsers
     resource_class: small
     parallelism: 2
 
@@ -85,7 +85,7 @@ jobs:
       - run:
           name: Install the Project dependencies
           path: ~/klassi/ProjectName
-          command: yarn install
+          command: yarn install --network-concurrency 1
 
       #########################################################################
       # Save yarn cache, don't include node modules because we end up with an #
