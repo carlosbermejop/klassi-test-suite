@@ -20,7 +20,7 @@ module.exports = {
     const title = await browser.getTitle();
     console.log(`checking what title being returned:- ${title}`);
     await helpers.compareImage(`${image}_1-1.png`);
-    await browser.keys('Enter');
+    await browser.keys('\uE007');
     // eslint-disable-next-line no-undef
     /** Accessibility verification */
     // eslint-disable-next-line no-undef
